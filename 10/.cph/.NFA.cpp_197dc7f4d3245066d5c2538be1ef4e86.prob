@@ -1,0 +1,1 @@
+{"name":"Local: NFA","url":"/home/pavan/Desktop/DSA/10/NFA.cpp","tests":[{"id":1682349859325,"input":"(((a+b+ba)*)a*)+abc","output":""},{"id":1682409908031,"input":"a+b","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pavan/Desktop/DSA/10/NFA.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: temp","url":"/home/pavan/Desktop/DSA/5/temp.cpp","tests":[{"id":1682393565450,"input":"10\nb 2 2\ne 2 4\nh 3 3\ni 2 3\nl 15 4\nm 0 3\no 12 4\ns 14 4\nu 13 4\ny 3 4\nhellohibyeseeyouiseeyouyouseeme","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pavan/Desktop/DSA/5/temp.cpp","group":"local","local":true}

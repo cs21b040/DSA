@@ -1,0 +1,1 @@
+{"name":"Local: weightedMedian","url":"/home/pavan/Desktop/DSA/2/weightedMedian.cpp","tests":[{"id":1681831715233,"input":"5 1\n3 7\n7 9\n16 11\n-1","output":""},{"id":1682418356337,"input":"10 4\n1 1\n3 2 \n9 3\n4 10\n-1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pavan/Desktop/DSA/2/weightedMedian.cpp","group":"local","local":true}
