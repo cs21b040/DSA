@@ -1,0 +1,396 @@
+[pavan@fedora DSA]$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/pavan/Desktop/DSA/.git/
+[pavan@fedora DSA]$ echo "# DSA" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:cs21b040/DSA.git
+git push -u origin main
+Reinitialized existing Git repository in /home/pavan/Desktop/DSA/.git/
+[master (root-commit) 7d43e5e] first commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[pavan@fedora DSA]$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[pavan@fedora DSA]$ git push --set-upstream origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[pavan@fedora DSA]$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.vscode/
+	1/
+	10/
+	2/
+	3/
+	4/
+	5/
+	6/
+	7/
+	8/
+	9/
+
+nothing added to commit but untracked files present (use "git add" to track)
+[pavan@fedora DSA]$ git add .
+[pavan@fedora DSA]$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .vscode/c_cpp_properties.json
+	new file:   .vscode/one
+	new file:   .vscode/settings.json
+	new file:   .vscode/tasks.json
+	new file:   1/.cph/.FourRussians.cpp_33dc83d4d3fbcd2a25af1efc520e6dbc.prob
+	new file:   1/FourRussians.cpp
+	new file:   1/hieuristic_approach
+	new file:   1/hieuristic_approach.cpp
+	new file:   1/knightTour
+	new file:   1/knightTour.cpp
+	new file:   10/.cph/.NFA.cpp_197dc7f4d3245066d5c2538be1ef4e86.prob
+	new file:   10/NFA
+	new file:   10/NFA.cpp
+	new file:   2/.cph/.weightedMedian.cpp_2f7bde14c039f645b59d115cf4fbf658.prob
+	new file:   2/deletion.cpp
+	new file:   2/weightedMedian
+	new file:   2/weightedMedian.cpp
+	new file:   3/.cph/.AlphaQuartile.cpp_020332f0cfa125c9d8875c1eca493edb.prob
+	new file:   3/.cph/.AlphaQuartile.cpp_877e5ed65bd7cb6e1a0f1122d06f4ba8.prob
+	new file:   3/.cph/.SkipList.cpp_0697b80ab886944946d2e9599e3b7a9c.prob
+	new file:   3/AlphaQuartile
+	new file:   3/AlphaQuartile.cpp
+	new file:   3/AlphaQuartileUsingQuickSelect.cpp
+	new file:   3/QuickSort.cpp
+	new file:   3/SkipList
+	new file:   3/SkipList.cpp
+	new file:   4/.cph/.KthSmallestUsingQuick.cpp_5d19d163e5b377c0b2588abe225ecb46.prob
+	new file:   4/.cph/.KthSmallestUsingSelect.cpp_df13630afd8729c58c7c5b49cbcf40d6.prob
+	new file:   4/.cph/.QuickSort_3way_stable.cpp_5ccad07a21c598ec2d123d52c46495a8.prob
+	new file:   4/KthSmallestUsingQuick.cpp
+	new file:   4/KthSmallestUsingSelect.cpp
+	new file:   4/MergeSortBottomUp.cpp
+	new file:   4/QuickSort.cpp
+	new file:   4/QuickSort_3way_stable
+	new file:   4/QuickSort_3way_stable.cpp
+	new file:   4/kthSmallestUsingHeap.cpp
+	new file:   5/.cph/.HuffmannCoding.cpp_00a1afde778814f70332c0ea35821367.prob
+	new file:   5/.cph/.expressionTree.cpp_f39f192d1b182b5b1a694b55ca084371.prob
+	new file:   5/.cph/.small.cpp_a48ae09526355eb62edbcb6144e99d80.prob
+	new file:   5/.cph/.temp.cpp_ad22e613de7e58509f83f8b17b707b75.prob
+	new file:   5/HuffmannCoding
+	new file:   5/HuffmannCoding.cpp
+	new file:   5/IMG20230214172531.jpg
+	new file:   5/expressionTree.cpp
+	new file:   5/hello.txt
+	new file:   5/output.txt
+	new file:   6/BST.cpp
+	new file:   6/Example
+	new file:   6/Example.cpp
+	new file:   6/implement.cpp
+	new file:   7/.cph/.AVL.cpp_76e1c28240018947c8de9c87bcef41ee.prob
+	new file:   7/AVL.cpp
+	new file:   8/.cph/.K_cluster_example.cpp_1892f1048e06cfb9e811c7f97c47e347.prob
+	new file:   8/.cph/.hi.cpp_4f46d3a99bd1f5d1afdf935aab748d4c.prob
+	new file:   8/K_cluster_example
+	new file:   8/K_cluster_example.cpp
+	new file:   8/RB_cluster.cpp
+	new file:   9/Hashing.cpp
+
+[pavan@fedora DSA]$ git commit -m "DONE"
+[main 0f4ae96] DONE
+ 58 files changed, 2666 insertions(+)
+ create mode 100644 .vscode/c_cpp_properties.json
+ create mode 100755 .vscode/one
+ create mode 100644 .vscode/settings.json
+ create mode 100644 .vscode/tasks.json
+ create mode 100644 1/.cph/.FourRussians.cpp_33dc83d4d3fbcd2a25af1efc520e6dbc.prob
+ create mode 100644 1/FourRussians.cpp
+ create mode 100755 1/hieuristic_approach
+ create mode 100644 1/hieuristic_approach.cpp
+ create mode 100755 1/knightTour
+ create mode 100644 1/knightTour.cpp
+ create mode 100644 10/.cph/.NFA.cpp_197dc7f4d3245066d5c2538be1ef4e86.prob
+ create mode 100755 10/NFA
+ create mode 100644 10/NFA.cpp
+ create mode 100644 2/.cph/.weightedMedian.cpp_2f7bde14c039f645b59d115cf4fbf658.prob
+ create mode 100644 2/deletion.cpp
+ create mode 100755 2/weightedMedian
+ create mode 100644 2/weightedMedian.cpp
+ create mode 100644 3/.cph/.AlphaQuartile.cpp_020332f0cfa125c9d8875c1eca493edb.prob
+ create mode 100644 3/.cph/.AlphaQuartile.cpp_877e5ed65bd7cb6e1a0f1122d06f4ba8.prob
+ create mode 100644 3/.cph/.SkipList.cpp_0697b80ab886944946d2e9599e3b7a9c.prob
+ create mode 100755 3/AlphaQuartile
+ create mode 100644 3/AlphaQuartile.cpp
+ create mode 100644 3/AlphaQuartileUsingQuickSelect.cpp
+ create mode 100644 3/QuickSort.cpp
+ create mode 100755 3/SkipList
+ create mode 100644 3/SkipList.cpp
+ create mode 100644 4/.cph/.KthSmallestUsingQuick.cpp_5d19d163e5b377c0b2588abe225ecb46.prob
+ create mode 100644 4/.cph/.KthSmallestUsingSelect.cpp_df13630afd8729c58c7c5b49cbcf40d6.prob
+ create mode 100644 4/.cph/.QuickSort_3way_stable.cpp_5ccad07a21c598ec2d123d52c46495a8.prob
+ create mode 100644 4/KthSmallestUsingQuick.cpp
+ create mode 100644 4/KthSmallestUsingSelect.cpp
+ create mode 100644 4/MergeSortBottomUp.cpp
+ create mode 100644 4/QuickSort.cpp
+ create mode 100755 4/QuickSort_3way_stable
+ create mode 100644 4/QuickSort_3way_stable.cpp
+ create mode 100644 4/kthSmallestUsingHeap.cpp
+ create mode 100644 5/.cph/.HuffmannCoding.cpp_00a1afde778814f70332c0ea35821367.prob
+ create mode 100644 5/.cph/.expressionTree.cpp_f39f192d1b182b5b1a694b55ca084371.prob
+ create mode 100644 5/.cph/.small.cpp_a48ae09526355eb62edbcb6144e99d80.prob
+ create mode 100644 5/.cph/.temp.cpp_ad22e613de7e58509f83f8b17b707b75.prob
+ create mode 100755 5/HuffmannCoding
+ create mode 100644 5/HuffmannCoding.cpp
+ create mode 100644 5/IMG20230214172531.jpg
+ create mode 100644 5/expressionTree.cpp
+ create mode 100644 5/hello.txt
+ create mode 100644 5/output.txt
+ create mode 100644 6/BST.cpp
+ create mode 100755 6/Example
+ create mode 100644 6/Example.cpp
+ create mode 100644 6/implement.cpp
+ create mode 100644 7/.cph/.AVL.cpp_76e1c28240018947c8de9c87bcef41ee.prob
+ create mode 100644 7/AVL.cpp
+ create mode 100644 8/.cph/.K_cluster_example.cpp_1892f1048e06cfb9e811c7f97c47e347.prob
+ create mode 100644 8/.cph/.hi.cpp_4f46d3a99bd1f5d1afdf935aab748d4c.prob
+ create mode 100755 8/K_cluster_example
+ create mode 100644 8/K_cluster_example.cpp
+ create mode 100644 8/RB_cluster.cpp
+ create mode 100644 9/Hashing.cpp
+[pavan@fedora DSA]$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[pavan@fedora DSA]$ git push --set-upstream origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[pavan@fedora DSA]$ git remote -v
+origin	git@github.com:cs21b040/DSA.git (fetch)
+origin	git@github.com:cs21b040/DSA.git (push)
+[pavan@fedora DSA]$ git push --set-upstream origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[pavan@fedora DSA]$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:cs21b040/DSA.git'
+[pavan@fedora DSA]$ rm -rf .git
+[pavan@fedora DSA]$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/pavan/Desktop/DSA/.git/
+[pavan@fedora DSA]$ git remote add origin https://github.com/cs21b040/DSA
+[pavan@fedora DSA]$ git origin -v
+git: 'origin' is not a git command. See 'git --help'.
+[pavan@fedora DSA]$ git remote -v
+origin	https://github.com/cs21b040/DSA (fetch)
+origin	https://github.com/cs21b040/DSA (push)
+[pavan@fedora DSA]$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/cs21b040/DSA'
+[pavan@fedora DSA]$ git add .
+[pavan@fedora DSA]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .vscode/c_cpp_properties.json
+	new file:   .vscode/one
+	new file:   .vscode/settings.json
+	new file:   .vscode/tasks.json
+	new file:   1/.cph/.FourRussians.cpp_33dc83d4d3fbcd2a25af1efc520e6dbc.prob
+	new file:   1/FourRussians.cpp
+	new file:   1/hieuristic_approach
+	new file:   1/hieuristic_approach.cpp
+	new file:   1/knightTour
+	new file:   1/knightTour.cpp
+	new file:   10/.cph/.NFA.cpp_197dc7f4d3245066d5c2538be1ef4e86.prob
+	new file:   10/NFA
+	new file:   10/NFA.cpp
+	new file:   2/.cph/.weightedMedian.cpp_2f7bde14c039f645b59d115cf4fbf658.prob
+	new file:   2/deletion.cpp
+	new file:   2/weightedMedian
+	new file:   2/weightedMedian.cpp
+	new file:   3/.cph/.AlphaQuartile.cpp_020332f0cfa125c9d8875c1eca493edb.prob
+	new file:   3/.cph/.AlphaQuartile.cpp_877e5ed65bd7cb6e1a0f1122d06f4ba8.prob
+	new file:   3/.cph/.SkipList.cpp_0697b80ab886944946d2e9599e3b7a9c.prob
+	new file:   3/AlphaQuartile
+	new file:   3/AlphaQuartile.cpp
+	new file:   3/AlphaQuartileUsingQuickSelect.cpp
+	new file:   3/QuickSort.cpp
+	new file:   3/SkipList
+	new file:   3/SkipList.cpp
+	new file:   4/.cph/.KthSmallestUsingQuick.cpp_5d19d163e5b377c0b2588abe225ecb46.prob
+	new file:   4/.cph/.KthSmallestUsingSelect.cpp_df13630afd8729c58c7c5b49cbcf40d6.prob
+	new file:   4/.cph/.QuickSort_3way_stable.cpp_5ccad07a21c598ec2d123d52c46495a8.prob
+	new file:   4/KthSmallestUsingQuick.cpp
+	new file:   4/KthSmallestUsingSelect.cpp
+	new file:   4/MergeSortBottomUp.cpp
+	new file:   4/QuickSort.cpp
+	new file:   4/QuickSort_3way_stable
+	new file:   4/QuickSort_3way_stable.cpp
+	new file:   4/kthSmallestUsingHeap.cpp
+	new file:   5/.cph/.HuffmannCoding.cpp_00a1afde778814f70332c0ea35821367.prob
+	new file:   5/.cph/.expressionTree.cpp_f39f192d1b182b5b1a694b55ca084371.prob
+	new file:   5/.cph/.small.cpp_a48ae09526355eb62edbcb6144e99d80.prob
+	new file:   5/.cph/.temp.cpp_ad22e613de7e58509f83f8b17b707b75.prob
+	new file:   5/HuffmannCoding
+	new file:   5/HuffmannCoding.cpp
+	new file:   5/IMG20230214172531.jpg
+	new file:   5/expressionTree.cpp
+	new file:   5/hello.txt
+	new file:   5/output.txt
+	new file:   6/BST.cpp
+	new file:   6/Example
+	new file:   6/Example.cpp
+	new file:   6/implement.cpp
+	new file:   7/.cph/.AVL.cpp_76e1c28240018947c8de9c87bcef41ee.prob
+	new file:   7/AVL.cpp
+	new file:   8/.cph/.K_cluster_example.cpp_1892f1048e06cfb9e811c7f97c47e347.prob
+	new file:   8/.cph/.hi.cpp_4f46d3a99bd1f5d1afdf935aab748d4c.prob
+	new file:   8/K_cluster_example
+	new file:   8/K_cluster_example.cpp
+	new file:   8/RB_cluster.cpp
+	new file:   9/Hashing.cpp
+	new file:   README.md
+
+[pavan@fedora DSA]$ git commit -m "DONE
+> ^C
+[pavan@fedora DSA]$ git commit -m "DONE"
+[master (root-commit) b7bf645] DONE
+ 59 files changed, 2668 insertions(+)
+ create mode 100644 .vscode/c_cpp_properties.json
+ create mode 100755 .vscode/one
+ create mode 100644 .vscode/settings.json
+ create mode 100644 .vscode/tasks.json
+ create mode 100644 1/.cph/.FourRussians.cpp_33dc83d4d3fbcd2a25af1efc520e6dbc.prob
+ create mode 100644 1/FourRussians.cpp
+ create mode 100755 1/hieuristic_approach
+ create mode 100644 1/hieuristic_approach.cpp
+ create mode 100755 1/knightTour
+ create mode 100644 1/knightTour.cpp
+ create mode 100644 10/.cph/.NFA.cpp_197dc7f4d3245066d5c2538be1ef4e86.prob
+ create mode 100755 10/NFA
+ create mode 100644 10/NFA.cpp
+ create mode 100644 2/.cph/.weightedMedian.cpp_2f7bde14c039f645b59d115cf4fbf658.prob
+ create mode 100644 2/deletion.cpp
+ create mode 100755 2/weightedMedian
+ create mode 100644 2/weightedMedian.cpp
+ create mode 100644 3/.cph/.AlphaQuartile.cpp_020332f0cfa125c9d8875c1eca493edb.prob
+ create mode 100644 3/.cph/.AlphaQuartile.cpp_877e5ed65bd7cb6e1a0f1122d06f4ba8.prob
+ create mode 100644 3/.cph/.SkipList.cpp_0697b80ab886944946d2e9599e3b7a9c.prob
+ create mode 100755 3/AlphaQuartile
+ create mode 100644 3/AlphaQuartile.cpp
+ create mode 100644 3/AlphaQuartileUsingQuickSelect.cpp
+ create mode 100644 3/QuickSort.cpp
+ create mode 100755 3/SkipList
+ create mode 100644 3/SkipList.cpp
+ create mode 100644 4/.cph/.KthSmallestUsingQuick.cpp_5d19d163e5b377c0b2588abe225ecb46.prob
+ create mode 100644 4/.cph/.KthSmallestUsingSelect.cpp_df13630afd8729c58c7c5b49cbcf40d6.prob
+ create mode 100644 4/.cph/.QuickSort_3way_stable.cpp_5ccad07a21c598ec2d123d52c46495a8.prob
+ create mode 100644 4/KthSmallestUsingQuick.cpp
+ create mode 100644 4/KthSmallestUsingSelect.cpp
+ create mode 100644 4/MergeSortBottomUp.cpp
+ create mode 100644 4/QuickSort.cpp
+ create mode 100755 4/QuickSort_3way_stable
+ create mode 100644 4/QuickSort_3way_stable.cpp
+ create mode 100644 4/kthSmallestUsingHeap.cpp
+ create mode 100644 5/.cph/.HuffmannCoding.cpp_00a1afde778814f70332c0ea35821367.prob
+ create mode 100644 5/.cph/.expressionTree.cpp_f39f192d1b182b5b1a694b55ca084371.prob
+ create mode 100644 5/.cph/.small.cpp_a48ae09526355eb62edbcb6144e99d80.prob
+ create mode 100644 5/.cph/.temp.cpp_ad22e613de7e58509f83f8b17b707b75.prob
+ create mode 100755 5/HuffmannCoding
+ create mode 100644 5/HuffmannCoding.cpp
+ create mode 100644 5/IMG20230214172531.jpg
+ create mode 100644 5/expressionTree.cpp
+ create mode 100644 5/hello.txt
+ create mode 100644 5/output.txt
+ create mode 100644 6/BST.cpp
+ create mode 100755 6/Example
+ create mode 100644 6/Example.cpp
+ create mode 100644 6/implement.cpp
+ create mode 100644 7/.cph/.AVL.cpp_76e1c28240018947c8de9c87bcef41ee.prob
+ create mode 100644 7/AVL.cpp
+ create mode 100644 8/.cph/.K_cluster_example.cpp_1892f1048e06cfb9e811c7f97c47e347.prob
+ create mode 100644 8/.cph/.hi.cpp_4f46d3a99bd1f5d1afdf935aab748d4c.prob
+ create mode 100755 8/K_cluster_example
+ create mode 100644 8/K_cluster_example.cpp
+ create mode 100644 8/RB_cluster.cpp
+ create mode 100644 9/Hashing.cpp
+ create mode 100644 README.md
+[pavan@fedora DSA]$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[pavan@fedora DSA]$ git push --set-upstream origin master
+Username for 'https://github.com': cs21b040
+Password for 'https://cs21b040@github.com': 
+Enumerating objects: 80, done.
+Counting objects: 100% (80/80), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (76/76), done.
+Writing objects: 100% (80/80), 2.89 MiB | 1.66 MiB/s, done.
+Total 80 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/cs21b040/DSA
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+[pavan@fedora DSA]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[pavan@fedora DSA]$ 
+
+
