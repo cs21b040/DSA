@@ -1,0 +1,1 @@
+{"name":"Local: endLab","url":"/home/pavan/Desktop/LAB/endLab.cpp","tests":[{"id":1682773692082,"input":"8\n1 0.20\n2 0.08\n3 0.04\n4 0.12\n5 0.24\n6 0.12\n8 0.08\n9 0.12\n0.33","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/pavan/Desktop/LAB/endLab.cpp","group":"local","local":true}

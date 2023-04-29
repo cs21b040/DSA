@@ -17,7 +17,6 @@ class NFA{
         st->val=0;
         int newidx=0;
         for(int i=0;i<s.length();i++){
-        char xya=s[i],xyb=s[i+1];
             if((s[i]=='a' || s[i]=='b') && (s[i+1]!='*' && s[i+1]!='+')){
                 state *x=new state();
                 x->val=count;
